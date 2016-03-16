@@ -91,7 +91,7 @@ describe('greet page POST', () => {
 
   it('should handle the put and return name', (done) => {
     var app = 'http://localhost:3030';
-    chai.request(app);
+    chai.request(app)
       .post('/greet')
       .send({'name': 'test'})
       .end(function (err, res) {
